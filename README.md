@@ -17,8 +17,10 @@ write_buffer_size = 67108864
 max_write_buffer_number = 3
 target_file_size_base = 67108864
 filter_policy = 10
+prefix_length = 5
 
-api_keys = apikey1,apikey2
+[auth]
+api_keys = apikey1,apikey2,testkpi
 ```
 
 - run: `uvicorn main:app --reload`
